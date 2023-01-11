@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+        integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+        integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+        crossorigin="anonymous"
+      />
+  </head>
+  <body class="bg-gradient-to-r from-cyan-600 to-cyan-900 ">
+    <header>
+          <nav class="flex items-center bg-gray-900 p-5 flex-wrap">
+            <a href="https://www.linkedin.com/in/maxime-sontag" class="p-2 mr-4 inline-flex items-center">
+            <svg
+              class="w-6 h-6 text-blue-500 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              ></path>
+            </svg>
+          </a>
+          <a href="home.html" class="p-2 mr-4 inline-flex items-center">
+            <span class="text-2xl text-white font-bold uppercase tracking-wide"
+              >SONTAG Maxime</span
+            >
+          </a>
+          <button
+            class="text-white inline-flex p-3 hover:bg-gray-800 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+            data-target="#navigation"
+          >
+            <i class="material-icons">menu</i>
+          </button>
+          <div
+            class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+            id="navigation"
+          >
+            <div
+              class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto "
+            >
+              <a
+                href="home.html"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">Accueil</span>
+              </a>
+              <a
+                href="competences.html"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">Compétences</span>
+              </a>
+              <a
+                href="projets.html"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">Projets</span>
+              </a>
+              <a
+                href="CV_Sontag_maxime.pdf" target="_blank"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">CV</span>
+              </a>
+              <a
+                href="mailto:maximesontag@gmail.com"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-6"
+              >
+                <span class="text-xl">Contact</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"
+        ></script>
+        <script>
+                $(document).ready(function () {
+            $(".nav-toggler").each(function (_, navToggler) {
+              var target = $(navToggler).data("target");
+              $(navToggler).on("click", function () {
+                $(target).animate({
+                  height: "toggle",
+                });
+              });
+            });
+          });
+        </script>
+    </header>
+    <h2 class="font-bold mb-2 text-5xl text-gray-50 text-center m-8">Compétences</h2>
+    <div class="flex flex-row justify-center m-6">
+      <div class="basis-1/5 m-4 ">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/Java.png" alt="Java_logo" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Java</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4 ">
+        <div class="bg-white rounded-lg shadow-md">
+          <img src="./images/Python.png" alt="Python_logo" class="object-scale-down max-h-48 w-96 ">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Python</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/c.png" alt="C_logo" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">C++</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/php.png" alt="PHP_logo" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">PHP</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row justify-center m-6">
+      <div class="basis-1/5 m-4 ">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/htmlcss.png" alt="HtmlCss_logo" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">HTML/CSS</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4 ">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/tailwind.png" alt="Tailwind_logo" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Tailwind</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/Laravel.png" alt="" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Laravel</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/sqlite.png" alt="" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Sqlite</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row justify-center m-6">
+      <div class="basis-1/5 m-4 ">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/flask.png" alt="" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Flask</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4 ">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/bash.png" alt="" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Bash</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/git.png" alt="" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">Git</h2>
+          </div>
+        </div>
+      </div>
+      <div class="basis-1/5 m-4">
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="./images/postgreSQL.png" alt="" class="object-scale-down h-48 w-96">
+          <div class="p-2">
+            <h2 class="font-bold mb-2 text-2xl text-gray-900 text-center">PostgreSQL</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="w-full text-center bg-white shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div class="mt-4">
+        <a href="home.html"><span class="mb-5 text-xl text-gray-500 hover:bg-gray-700 sm:text-xl dark:text-gray-400 p-4">Accueil</span></a>
+        <a href="CV_Sontag_maxime.pdf" target="_blank"><span class="mb-5 text-xl text-gray-500 hover:bg-gray-700 sm:text-xl dark:text-gray-400 p-4">CV</span></a>
+        <a href="mailto:maximesontag@gmail.com"><span class="mb-5 text-xl text-gray-500 hover:bg-gray-700 sm:text-xl dark:text-gray-400 p-4">Contact</span></a>
+        <p class="mb-5 text-base text-gray-400 sm:text-lg dark:text-gray-400 pt-6">© 2022 Sontag Maxime</p>
+      </div>
+
+    </footer>
+  </body>
+</html>

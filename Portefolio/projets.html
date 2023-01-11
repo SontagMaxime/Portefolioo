@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+        integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+        integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+        crossorigin="anonymous"
+      />
+  </head>
+  <body class="bg-gradient-to-r from-cyan-600 to-cyan-900 ">
+    <header>
+          <nav class="flex items-center bg-gray-900 p-5 flex-wrap">
+            <a href="https://www.linkedin.com/in/maxime-sontag" class="p-2 mr-4 inline-flex items-center">
+            <svg
+              class="w-6 h-6 text-blue-500 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              ></path>
+            </svg>
+          </a>
+          <a href="home.html" class="p-2 mr-4 inline-flex items-center">
+            <span class="text-2xl text-white font-bold uppercase tracking-wide"
+              >SONTAG Maxime</span
+            >
+          </a>
+          <button
+            class="text-white inline-flex p-3 hover:bg-gray-800 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+            data-target="#navigation"
+          >
+            <i class="material-icons">menu</i>
+          </button>
+          <div
+            class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+            id="navigation"
+          >
+            <div
+              class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto "
+            >
+              <a
+                href="home.html"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">Accueil</span>
+              </a>
+              <a
+                href="competences.html"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">Compétences</span>
+              </a>
+              <a
+                href="projets.html"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">Projets</span>
+              </a>
+              <a
+                href="CV_Sontag_maxime.pdf" target="_blank"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-4"
+              >
+                <span class="text-xl">CV</span>
+              </a>
+              <a
+                href="mailto:maximesontag@gmail.com"
+                class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-800 hover:text-white mr-6"
+              >
+                <span class="text-xl">Contact</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"
+        ></script>
+        <script>
+                $(document).ready(function () {
+            $(".nav-toggler").each(function (_, navToggler) {
+              var target = $(navToggler).data("target");
+              $(navToggler).on("click", function () {
+                $(target).animate({
+                  height: "toggle",
+                });
+              });
+            });
+          });
+        </script>
+    </header>
+
+    <h2 class="font-bold mb-2 text-5xl text-gray-50 text-center mt-10 mb-20">Projets</h2>
+
+    <div  class="grid grid-cols-2 justify-items-center m-10 ">
+      <div class="max-w-sm bg-white">
+          <img class="" src="./images/marathon.png" alt="Marathon Web" />
+          <div class="p-5 ">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-800">Level Up</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Level Up est un projet réalisé lors d'un marathon web organisé par l'IUT de Lens. Nous étions une équipe de 9 comportant 5 étudiants MMI et 4 étudiants INFO. Le but du projet était de réaliser un site web en Laravel sur 36h, le sujet était un musée en ligne avec différentes salles que l'on pouvait visiter les unes après les autres. Nous avons décidé de faire le musée sur les jeux vidéo en retraçant les différentes époques du jeu vidéo.
+              </p>
+              <div class="pt-4">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Laravel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ">#Team</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ">#Git</span>
+              </div>
+          </div>
+      </div>
+      <div>
+        <div class="max-w-sm bg-white ">
+          <img class="" src="./images/spaceinvader.png" alt="spaceinvaders" />
+          <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-800">Space Invaders</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Ce projet consiste à la création du célébre jeu Space Invaders en java. Pour ce faire, nous étions en équipe de 4 pour développer le jeu. Nous avons d'abord commencé par développer la première base du jeu avec les aliens et le joueur, puis nous avons développer de nouvelles fonctionnalité tels que des bonus pour le joueur, des murs de protection ou encore le déplacement en escadrille des aliens.
+              </p>
+              <div class="pt-10">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Java</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ">#Team</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ">#Git</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  class="grid grid-cols-2 justify-items-center mr-10 ml-10 mt-20 mb-10">
+      <div class="max-w-sm bg-white ">
+          <img class="" src="./images/pokemon.png" alt="pokemon" />
+          <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-800">Gestion de Pokémon</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Le projet consiste à développer une application de gestion de Pokémon en utilisant le framework Laravel.
+                L'application permettra aux utilisateurs de gérer leur collection de Pokémon en les ajoutant, en les modifiant et en les supprimant à partir de leur collection personnelle. Les utilisateurs pourront également trier et filtrer leurs Pokémon en fonction de différents critères tels que les types ou les faiblesses. Il y aura des pages dédiées pour chaque Pokémon avec des informations détaillées telles que les statistiques et les images.
+              <div class="pt-10">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Laravel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ">#Solo</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ">#Git</span>
+              </div>
+          </div>
+      </div>
+      <div>
+        <div class="max-w-sm bg-white ">
+          <img class="" src="./images/meteo2.jpg" alt="meteo" />
+          <div class="p-5">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700 dark:text-gray-800">Application de relevé météo</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Notre projet consiste à développer une application de relevée météo en utilisant le framework Flask et une API météorologique. Cette application a été développée par une équipe de 3 développeurs.
+                L'application permet aux utilisateurs de consulter les dernières prévisions météorologiques d'un emplacement dans la liste. Les utilisateurs pourront également consulter les données météorologiques historiques pour des dates spécifiques. L'application utilise une API météorologique pour récupérer les données en temps réel et les afficher de manière claire et intuitive avec un graphe d'évolution des températures.
+              </p>
+              <div class="pt-4">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Flask</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ">#Team</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 ">#Git</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="w-full text-center bg-white shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div class="mt-4">
+        <a href="home.html"><span class="mb-5 text-xl text-gray-500 hover:bg-gray-700 sm:text-xl dark:text-gray-400 p-4">Accueil</span></a>
+        <a href="CV_Sontag_maxime.pdf" target="_blank"><span class="mb-5 text-xl text-gray-500 hover:bg-gray-700 sm:text-xl dark:text-gray-400 p-4">CV</span></a>
+        <a href="mailto:maximesontag@gmail.com"><span class="mb-5 text-xl text-gray-500 hover:bg-gray-700 sm:text-xl dark:text-gray-400 p-4">Contact</span></a>
+        <p class="mb-5 text-base text-gray-400 sm:text-lg dark:text-gray-400 pt-6">© 2022 Sontag Maxime</p>
+      </div>
+
+    </footer>
+  </body>
+</html>
